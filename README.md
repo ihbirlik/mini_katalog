@@ -20,4 +20,9 @@ flutter run
 ```
 
 ## Ekran Görüntüleri
-<!-- screenshots klasöründen eklenecek -->
+
+<p float="left">
+  <img src="Screenshots/1111.jpg" width="30%" />
+  <img src="Screenshots/22222.jpg" width="30%" />
+  <img src="Screenshots/333.jpg" width="30%" />
+</p>

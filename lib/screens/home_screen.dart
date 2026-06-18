@@ -211,14 +211,14 @@ class _HomeScreenState extends State<HomeScreen> {
       );
     }
 
-    // Ürün grid'i — 3 sütun
+    // Ürün grid'i — 4 sütun
     return GridView.builder(
-      padding: const EdgeInsets.all(12),
+      padding: const EdgeInsets.all(8),
       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 3,
-        crossAxisSpacing: 8,
-        mainAxisSpacing: 8,
-        childAspectRatio: 0.75,
+        crossAxisCount: 4,
+        crossAxisSpacing: 6,
+        mainAxisSpacing: 6,
+        childAspectRatio: 0.62,
       ),
       itemCount: _filteredProducts.length,
       itemBuilder: (context, index) {

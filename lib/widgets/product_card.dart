@@ -34,27 +34,26 @@ class ProductCard extends StatelessWidget {
                 child: Container(
                   color: const Color(0xFFF5F5F5),
                   width: double.infinity,
-                  padding: const EdgeInsets.all(12),
+                  padding: const EdgeInsets.all(6),
                   child: Image.network(
                     product.image,
                     fit: BoxFit.contain,
                     errorBuilder: (_, _, _) =>
-                        const Icon(Icons.image_not_supported),
+                        const Icon(Icons.image_not_supported, size: 20),
                   ),
                 ),
               ),
             ),
 
             // Ürün bilgileri
-
             Padding(
-              padding: const EdgeInsets.all(7),
+              padding: const EdgeInsets.all(5),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   // Kategori etiketi
                   Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                    padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 1),
                     decoration: BoxDecoration(
                       color: Colors.black,
                       borderRadius: BorderRadius.circular(20),
@@ -63,33 +62,33 @@ class ProductCard extends StatelessWidget {
                       product.category,
                       style: const TextStyle(
                         color: Colors.white,
-                        fontSize: 7,
+                        fontSize: 6,
                         fontWeight: FontWeight.w500,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ),
-                  const SizedBox(height: 4),
+                  const SizedBox(height: 3),
 
                   // Ürün adı
                   Text(
                     product.title,
                     style: const TextStyle(
-                      fontSize: 12,
+                      fontSize: 9,
                       fontWeight: FontWeight.w600,
                       color: Colors.black87,
                     ),
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                   ),
-                  const SizedBox(height: 3),
+                  const SizedBox(height: 2),
 
                   // Fiyat
                   Text(
                     '\$${product.price.toStringAsFixed(2)}',
                     style: const TextStyle(
-                      fontSize: 11,
+                      fontSize: 9,
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
                     ),

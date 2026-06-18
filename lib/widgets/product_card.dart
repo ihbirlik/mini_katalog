@@ -46,6 +46,7 @@ class ProductCard extends StatelessWidget {
             ),
 
             // Ürün bilgileri
+
             Padding(
               padding: const EdgeInsets.all(7),
               child: Column(
@@ -75,7 +76,7 @@ class ProductCard extends StatelessWidget {
                   Text(
                     product.title,
                     style: const TextStyle(
-                      fontSize: 10,
+                      fontSize: 12,
                       fontWeight: FontWeight.w600,
                       color: Colors.black87,
                     ),
